@@ -66,3 +66,5 @@ let x=15, y=25;
 let obj = new Solution()
 let gcd = obj.checkGCD(x,y);
 console.log(`GCD of ${x} and ${y} is:`+gcd);
+
+// T.C = O(log(min(n1,n2))), S.C = O(1)
