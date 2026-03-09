@@ -1,4 +1,3 @@
-
 // Print all Divisors of a given Number
 
 /*Problem Statement: Given an integer N, return all divisors of N.
