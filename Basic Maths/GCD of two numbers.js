@@ -45,7 +45,7 @@ Hence, return 5 as the GCD.
 
 
 */
-class Solution{
+class Solution1{
     checkGCD(a,b){
         while(a>0 && b>0){
             if(a>b){
@@ -63,8 +63,8 @@ class Solution{
 }
 
 let x=15, y=25;
-let obj = new Solution()
-let gcd = obj.checkGCD(x,y);
+let obj1 = new Solution1()
+let gcd1 = obj.checkGCD(x,y);
 console.log(`GCD of ${x} and ${y} is:`+gcd);
 
 // T.C = O(log(min(n1,n2))), S.C = O(1)
