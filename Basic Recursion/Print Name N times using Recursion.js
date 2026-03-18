@@ -14,3 +14,5 @@ const sol =  new Solution();
 const N = 5;
 const name = "Suprakash";
 sol.printName(name,0,N);
+
+// T.C = O(N), S.C = O(N) due to recursive stack space, otherwise O(1) if we use tail recursion optimization.
