@@ -9,7 +9,7 @@ class FrequencyCounter {
 
         // Count the frequencies
         for (let num of arr) {
-            freqMap.set(num, (freqMap.get(num) || 0) + 1);
+            freqMap.set(num, (freqMap.get(num) || 0) + 1); // Increment frequency count for the number
         }
 
         let maxFreq = 0, minFreq = arr.length;
@@ -17,8 +17,8 @@ class FrequencyCounter {
 
         // Iterate through map to find max and min frequency elements
         for (let [element, count] of freqMap.entries()) {
-            if (count > maxFreq) {
-                maxFreq = count;
+            if (count > maxFreq) { 
+                maxFreq = count; 
                 maxEle = element;
             }
 
