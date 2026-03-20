@@ -49,7 +49,7 @@ sol.countFreq(arr, n);
         }
     }
 
-    const arr1 = [10,5,10,15,10,5];
+    const arr1 = [10,5,10,15,10,5,20,100,50, 11, 2, 24, 5, 10, 15, 20];
     const n1 = arr1.length;
 
     const sol1 = new Solution1();
