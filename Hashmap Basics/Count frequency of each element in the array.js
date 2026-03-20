@@ -37,9 +37,9 @@ sol.countFreq(arr, n);
             let freqMap = new Map(); // Create a HashMap to store the frequency of each element
             for(let i=0; i<n; i++){
                 if(freqMap.has(arr[i])){
-                    freqMap.set(arr[i], freqMap.get(arr[i])+1);
+                    freqMap.set(arr[i], freqMap.get(arr[i])+1); // If the element is already present in the HashMap, increment its count
                 } else {
-                    freqMap.set(arr[i], 1);
+                    freqMap.set(arr[i], 1); // If the element is not present in the HashMap, add it with a count of 1   
                 }
             }
             // Print the frequency of each element
