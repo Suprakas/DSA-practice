@@ -43,3 +43,7 @@ let arr = [10,2,34,56,7,21,55,3,101];
 let sol = new Solution();
 sol.mergeSort(arr, 0, arr.length - 1);
 console.log(...arr);
+
+// Time Complexity: O(N log N) where N is the number of elements in the array.
+// This is because the array is divided into two halves log N times and each merge operation takes O(N) time.
+// Space Complexity: O(N) due to the temporary array used for merging.  
