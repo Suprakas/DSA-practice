@@ -47,26 +47,28 @@ class LinkedList {
         }
     }
 
-    insertAt(index, data) {
-        const newNode = new Node(data);
-        if (index === 0) {
-            newNode.next = this.head;
-            this.head = newNode;
-            return;
-        }
-        let current = this.head;
-        let count = 0;
-        while (current !== null && count < index - 1) {
-            current = current.next;
-            count++;
-        }
-        if (current === null) {
-            console.log("Index out of bounds");
-            return;
-        }
-        newNode.next = current.next;
-        current.next = newNode;
+   insertAt(index, data){
+    const newNode = new Node(data);
+
+    if(index === 0){
+        newNode.next = this.head;
+        this.head = newNode;
+        return;
     }
+
+    let current =  this.head;
+    let count = 0;
+    while(current !== null && count < index-1){
+        current = current.next;
+        count++;
+    }
+    if(current === null){
+        console.log("Index is out of bound");
+        return;
+    }
+    newNode.next = current.next;
+    current.next = newNode;
+   }
 
     print() {
         let current = this.head;
